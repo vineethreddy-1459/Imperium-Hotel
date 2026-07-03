@@ -2,7 +2,7 @@
 // Welcome Message
 // =========================
 window.onload = function () {
-    console.log("Welcome to Imperium Hotel!");
+    console.log("Welcome to  Imperium Hotel!");
 };
 
 // =========================

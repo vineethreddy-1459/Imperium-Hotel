@@ -222,3 +222,31 @@ footer{
     font-size:18px;
 }
 }
+/* Social Media Icons */
+
+.social-icons{
+    margin-top:20px;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+.social-icons a{
+    width:45px;
+    height:45px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#D4AF37;
+    color:#fff;
+    border-radius:50%;
+    font-size:20px;
+    text-decoration:none;
+    transition:0.3s ease;
+}
+
+.social-icons a:hover{
+    background:#fff;
+    color:#0B2447;
+    transform:translateY(-5px) scale(1.1);
+}

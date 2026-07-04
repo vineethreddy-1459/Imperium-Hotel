@@ -1,4 +1,4 @@
-# 🌿 Imperium Stays – Nature Styled Luxury Hotel Website
+7# 🌿 Imperium Stays – Nature Styled Luxury Hotel Website
 
 Welcome to **Imperium Stays**, a beautifully designed **nature-inspired luxury hotel website project**. This project showcases a modern hotel booking interface built using **HTML, CSS, and JavaScript**, focusing on elegance, simplicity, and user experience.
 

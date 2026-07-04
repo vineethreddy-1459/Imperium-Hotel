@@ -44,15 +44,50 @@ body{
     margin-left:25px;
 }
 
+/* 🔥 UPDATED NAV LINKS */
 .nav-links a{
     color:#fff;
     text-decoration:none;
     font-weight:500;
+    position:relative;
+    padding:8px 5px;
+    transition:all 0.3s ease;
 }
 
-.nav-links a:hover,
+/* Underline animation */
+.nav-links a::after{
+    content:"";
+    position:absolute;
+    width:0%;
+    height:2px;
+    left:0;
+    bottom:0;
+    background:#D4AF37;
+    transition:0.3s ease;
+}
+
+/* Hover */
+.nav-links a:hover::after{
+    width:100%;
+}
+
+.nav-links a:hover{
+    color:#D4AF37;
+    text-shadow:0 0 8px rgba(212,175,55,0.7);
+}
+
+/* Active (clicked link stays highlighted) */
 .nav-links a.active{
     color:#D4AF37;
+}
+
+.nav-links a.active::after{
+    width:100%;
+}
+
+/* Click press effect */
+.nav-links a:active{
+    transform:scale(0.9);
 }
 
 /* Hero Section */
@@ -97,6 +132,7 @@ body{
 
 .btn:hover{
     background:#b38d25;
+    transform:translateY(-3px);
 }
 
 /* Sections */
@@ -132,6 +168,11 @@ section h2{
     border-radius:10px;
     overflow:hidden;
     box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
 }
 
 .card img{
@@ -159,6 +200,11 @@ section h2{
     border-radius:10px;
     text-align:center;
     box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.facility-list div:hover{
+    transform:translateY(-5px);
 }
 
 /* Testimonials */
@@ -186,6 +232,11 @@ section h2{
     height:250px;
     object-fit:cover;
     border-radius:10px;
+    transition:0.3s;
+}
+
+.gallery-container img:hover{
+    transform:scale(1.05);
 }
 
 /* Footer */
@@ -222,6 +273,7 @@ footer{
     font-size:18px;
 }
 }
+
 /* Social Media Icons */
 
 .social-icons{

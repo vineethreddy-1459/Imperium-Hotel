@@ -10,6 +10,8 @@
 <meta name="keywords" content="Imperium Hotel, booking, hotel reservation">
 
 <link rel="stylesheet" href="style.css">
+
+<!-- Font Awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
@@ -36,7 +38,9 @@
 
 </header>
 
-<section>
+<!-- Booking Section -->
+
+<section id="booking">
 
 <h1 style="text-align:center;color:#0B2447;margin-bottom:20px;">
 Book Your Stay
@@ -44,13 +48,17 @@ Book Your Stay
 
 <div style="max-width:700px;margin:auto;background:#fff;padding:30px;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,.1);">
 
-<form>
+<!-- ✅ Added onsubmit validation -->
+<form onsubmit="return validateForm()">
 
 <label>Full Name</label><br><br>
-<input type="text" placeholder="Enter your name" style="width:100%;padding:12px;"><br><br>
+<input type="text" id="name" placeholder="Enter your name" style="width:100%;padding:12px;"><br><br>
 
 <label>Email</label><br><br>
-<input type="email" placeholder="Enter your email" style="width:100%;padding:12px;"><br><br>
+<input type="email" id="email" placeholder="Enter your email" style="width:100%;padding:12px;"><br><br>
+
+<label>Phone</label><br><br>
+<input type="text" id="phone" placeholder="Enter your phone number" style="width:100%;padding:12px;"><br><br>
 
 <label>Check-in Date</label><br><br>
 <input type="date" style="width:100%;padding:12px;"><br><br>
@@ -78,6 +86,9 @@ Book Your Stay
 </div>
 
 </section>
+
+<!-- Footer -->
+
 <footer>
 
 <p>© 2026 Imperium Hotel. All Rights Reserved.</p>
@@ -111,7 +122,8 @@ This website is a fictional academic project created for educational purposes on
 </div>
 
 </footer>
-<!--Start of Tawk.to Script-->
+
+<!-- Tawk.to Chat -->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 (function(){
@@ -123,7 +135,9 @@ s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
-<!--End of Tawk.to Script-->
+
+<!-- ✅ JS FILE (IMPORTANT) -->
+<script src="script.js"></script>
 
 </body>
 </html>

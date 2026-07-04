@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Register | Imperium Hotel</title>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 <style>
 
+/* Reset */
 *{
     margin:0;
     padding:0;
@@ -14,68 +23,126 @@
     font-family:Arial,sans-serif;
 }
 
+/* Background */
 body{
     display:flex;
     justify-content:center;
     align-items:center;
     height:100vh;
-    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url("images/hotel-bg.jpg");
+    background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url("images/hotel-bg.jpg");
     background-size:cover;
     background-position:center;
 }
 
+/* Container */
 .container{
     width:380px;
     background:#fff;
     padding:30px;
-    border-radius:10px;
-    box-shadow:0 5px 15px rgba(0,0,0,.3);
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,.3);
+    animation:fadeIn 1s ease;
 }
 
+/* Title */
 h2{
     text-align:center;
     margin-bottom:20px;
     color:#003366;
 }
 
+/* Inputs */
 input{
     width:100%;
     padding:12px;
     margin:10px 0;
     border:1px solid #ccc;
-    border-radius:5px;
+    border-radius:6px;
+    transition:0.3s;
 }
 
+/* Focus Effect */
+input:focus{
+    border-color:#003366;
+    box-shadow:0 0 8px rgba(0,51,102,.3);
+    outline:none;
+}
+
+/* Button */
 button{
     width:100%;
     padding:12px;
     background:#003366;
     color:#fff;
     border:none;
-    border-radius:5px;
+    border-radius:6px;
     cursor:pointer;
     font-size:16px;
+    transition:0.3s;
 }
 
+/* Hover */
 button:hover{
     background:#0055aa;
 }
 
+/* Click Effect */
+button:active{
+    transform:scale(0.95);
+}
+
+/* Text */
 p{
     text-align:center;
     margin-top:15px;
 }
 
+/* Link */
 a{
     color:#003366;
     text-decoration:none;
     font-weight:bold;
 }
 
+/* Animation */
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(20px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
 </style>
 
 </head>
-<!--Start of Tawk.to Script-->
+
+<body>
+
+<div class="container">
+
+<h2>Create Account</h2>
+
+<!-- ✅ Connected to JS -->
+<form onsubmit="return validateRegister();">
+
+<input type="text" id="name" placeholder="Full Name">
+
+<input type="email" id="email" placeholder="Email Address">
+
+<input type="tel" id="phone" placeholder="Mobile Number">
+
+<input type="password" id="password" placeholder="Password">
+
+<input type="password" id="confirmPassword" placeholder="Confirm Password">
+
+<button type="submit">Register</button>
+
+</form>
+
+<p>Already have an account? <a href="login.html">Login</a></p>
+
+</div>
+
+<!-- Tawk Chat (fixed position) -->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 (function(){
@@ -87,32 +154,9 @@ s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
-<!--End of Tawk.to Script-->
-<body>
 
-<div class="container">
-
-<h2>Create Account</h2>
-
-<form>
-
-<input type="text" placeholder="Full Name" required>
-
-<input type="email" placeholder="Email Address" required>
-
-<input type="tel" placeholder="Mobile Number" required>
-
-<input type="password" placeholder="Password" required>
-
-<input type="password" placeholder="Confirm Password" required>
-
-<button type="submit">Register</button>
-
-</form>
-
-<p>Already have an account? <a href="login.html">Login</a></p>
-
-</div>
+<!-- JS -->
+<script src="script.js"></script>
 
 </body>
 </html>

@@ -1,4 +1,4 @@
-Byy<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -9,14 +9,18 @@ Byy<!DOCTYPE html>
 <title>Contact | Imperium Hotel</title>
 
 <meta name="description" content="Contact Imperium Hotel or book your stay online.">
-
 <meta name="keywords" content="Hotel Booking, Contact, Luxury Hotel, Imperium Hotel">
 
 <link rel="stylesheet" href="style.css">
+
+<!-- Font Awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 </head>
-<!--Start of Tawk.to Script-->
+
+<body>
+
+<!-- Tawk.to Chat -->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 (function(){
@@ -28,9 +32,6 @@ s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
-<!--End of Tawk.to Script-->
-
-<body>
 
 <header>
 
@@ -43,13 +44,9 @@ s0.parentNode.insertBefore(s1,s0);
 <ul class="nav-links">
 
 <li><a href="index.html">Home</a></li>
-
 <li><a href="about.html">About</a></li>
-
 <li><a href="rooms.html">Rooms</a></li>
-
 <li><a href="gallery.html">Gallery</a></li>
-
 <li><a href="contact.html" class="active">Contact</a></li>
 
 </ul>
@@ -58,7 +55,9 @@ s0.parentNode.insertBefore(s1,s0);
 
 </header>
 
-<section>
+<!-- Contact Section -->
+
+<section id="contact">
 
 <h1 style="text-align:center;color:#0B2447;margin-bottom:20px;">
 Contact & Booking
@@ -70,51 +69,42 @@ Book your stay with us by filling out the form below.
 
 <div style="max-width:700px;margin:auto;background:#fff;padding:30px;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,.1);">
 
+<!-- ✅ Connected to JS validation -->
 <form onsubmit="return validateForm();">
 
 <label><strong>Full Name</strong></label><br><br>
-
 <input type="text" id="name" placeholder="Enter your name"
 style="width:100%;padding:12px;"><br><br>
 
 <label><strong>Email Address</strong></label><br><br>
-
 <input type="email" id="email"
 placeholder="Enter your email"
 style="width:100%;padding:12px;"><br><br>
 
 <label><strong>Phone Number</strong></label><br><br>
-
 <input type="text" id="phone"
 placeholder="+91 XXXXXXXXXX"
 style="width:100%;padding:12px;"><br><br>
 
 <label><strong>Check-in Date</strong></label><br><br>
-
 <input type="date"
 style="width:100%;padding:12px;"><br><br>
 
 <label><strong>Check-out Date</strong></label><br><br>
-
 <input type="date"
 style="width:100%;padding:12px;"><br><br>
 
 <label><strong>Guests</strong></label><br><br>
-
 <input type="number"
 placeholder="Number of Guests"
 style="width:100%;padding:12px;"><br><br>
 
 <label><strong>Room Type</strong></label><br><br>
-
 <select style="width:100%;padding:12px;">
 
 <option>Deluxe Room</option>
-
 <option>Executive Room</option>
-
 <option>Family Suite</option>
-
 <option>Presidential Suite</option>
 
 </select>
@@ -122,9 +112,7 @@ style="width:100%;padding:12px;"><br><br>
 <br><br>
 
 <button class="btn" type="submit">
-
 Book Now
-
 </button>
 
 </form>
@@ -133,12 +121,60 @@ Book Now
 
 <br><br>
 
+<!-- Contact Info -->
+
 <div style="text-align:center;">
 
 <h2>Contact Information</h2>
 
-<p><strong>Address:</strong>  Imperium Hotel, No. 12, Rajiv Gandhi Salai (OMR), Near IGP Bus Stop, Perungudi, Chennai, Tamil Nadu – 600096, India.</p>
+<p><strong>Address:</strong> Imperium Hotel, No. 12, Rajiv Gandhi Salai (OMR), Near IGP Bus Stop, Perungudi, Chennai, Tamil Nadu – 600096, India.</p>
 
 <p><strong>Phone:</strong> +91 62101 01704</p>
 
-<p><strong>Email:</strong> info@imperiumhotel.com
+<p><strong>Email:</strong> info@imperiumhotel.com</p>
+
+</div>
+
+</section>
+
+<!-- Footer -->
+
+<footer>
+
+<p>© 2026 Imperium Hotel. All Rights Reserved.</p>
+
+<p>
+This website is a fictional academic project created for educational purposes only.
+</p>
+
+<div class="social-icons">
+
+<a href="https://facebook.com" target="_blank">
+<i class="fab fa-facebook-f"></i>
+</a>
+
+<a href="https://instagram.com" target="_blank">
+<i class="fab fa-instagram"></i>
+</a>
+
+<a href="https://x.com" target="_blank">
+<i class="fab fa-x-twitter"></i>
+</a>
+
+<a href="https://youtube.com" target="_blank">
+<i class="fab fa-youtube"></i>
+</a>
+
+<a href="https://linkedin.com" target="_blank">
+<i class="fab fa-linkedin-in"></i>
+</a>
+
+</div>
+
+</footer>
+
+<!-- JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
